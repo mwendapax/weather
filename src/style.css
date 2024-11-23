@@ -1,0 +1,174 @@
+/* fonts */
+
+@font-face {
+  font-family: "lexend_exaregular";
+  src:
+    url("./assets/fonts/lexendexa-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/lexendexa-variablefont_wght-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #a1d6b2, #cedf9f, #f1f3c2);
+}
+
+.flx-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-one {
+  appearance: none;
+  height: 60px;
+  padding: 10px;
+  border-radius: 30px 0 0 30px;
+  width: 500px;
+  border: 4px solid rgb(236, 179, 101, 0.1);
+  border-right: 1px solid rgba(74, 73, 71, 0.2);
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-img {
+  min-height: 100%;
+  background-color: white;
+  width: 80px;
+  border-left: none;
+  border-radius: 0 30px 30px 0;
+  background:#FDA403;
+
+  > img {
+    height: 35px;
+    border-radius: 50%;
+    width: auto;
+  }
+}
+
+
+
+input:focus,
+input:active {
+  appearance: none;
+  border: 0px;
+}
+
+table {
+  font-family:
+    "lexend_exaregular",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  width: 95%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: rgba(241, 240, 232, 0.6);
+}
+
+tr > * {
+  border: 1px solid #9ec8b9;
+  text-align: center;
+}
+
+tr > :not(:last-child) {
+  width: calc(100% / 18);
+}
+
+tr:first-of-type {
+  color: #40534c;
+}
+tr:nth-of-type(2) {
+  color: rgba(64, 83, 76, 0.8);
+}
+
+td {
+  color: #fbf6ee;
+  height: 10px;
+  font-size: calc(1rem - 5px);
+}
+
+td:not(:first-child) {
+  background-color: rgba(251, 246, 238, 0.3);
+  color: rgba(2, 21, 38, 0.8);
+}
+
+th,
+td {
+  height: 45px;
+}
+
+nav {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  display: none;
+
+  > div {
+    flex: 1;
+  }
+
+  #search-one {
+    appearance: none;
+    height: 40px;
+    padding: 10px;
+    width: 500px;
+    border-radius: 5px 0 0 5px;
+    border: 4px solid rgb(236, 179, 101, 0.1);
+    border-right: 1px solid rgba(74, 73, 71, 0.2);
+    margin-left: auto;
+  }
+}
+
+.address {
+  display: flex;
+  gap: 2px;
+}
+
+.addr {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: #006a67;
+  text-transform: capitalize;
+}
+
+.temps {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: #ff204e;
+}
+
+.addr,
+.temps {
+  padding-inline: 10px;
+  color: white;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  > table {
+    align-self: flex-end;
+  }
+}
+
+tr > :first-child:not([scope="col"]) {
+  background-color: #006769;
+}
