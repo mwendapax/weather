@@ -39,7 +39,6 @@ function appendMultip(parent, ...args) {
 
 function changeToDeg(arr) {
   arr.map((item) => {
-    console.log(item);
     let num = Number(item.textContent);
     let celc = ((num - 32) * 5) / 9;
 
